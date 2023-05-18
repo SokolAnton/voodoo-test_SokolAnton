@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./src/js/script.js"></script>
+    <link rel="stylesheet" href="./src/css/custom.css">
+    <title>VooDooTest</title>
+</head>
+
+<body class="font-space-grotesk">
+
+
+    <header class="py-12 border-b border-black mb-24 ">
+        <div class="container mx-auto flex justify-between ">
+            <div class="">
+                <img src="./src/img/Logo.png" alt="">
+            </div>
+            <div class="login font-semibold text-xl">
+                <button class="font-semibold hover:bg-black hover:text-white hover:font-bold px-3 py-3 rounded">About
+                    us</button>
+                <button
+                    class="text-white font-bold bg-black  px-3 py-3 ml-12 rounded hover:bg-transparent hover:text-black hover:font-semibold">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="pb-20">
+        <div class="container mx-auto ">
+            <section class="flex flex-col mb-12">
+                <div class="betaInfo bg-black p-6 text-white rounded flex justify-between items-center"
+                    onclick="toggleHidden()">
+                    <div class="flex justify-start gap-12">
+                        <div class="flex gap-2">
+                            <img src="./src/img/alert-circle.png" alt="alert">
+                            <span class="font-bold text-base">ALPHA</span>
+                        </div>
+                        <div class="text-sm font-medium">
+                            Important info regarding our service
+                        </div>
+                    </div>
+                    <div class="animate-bounce  h-4">
+                        <img src="./src/img/Vector.png" alt="arrow">
+                    </div>
+                </div>
+                <div id="hiddenContent" class="hidden mt-2 bg-black text-white p-6 rounded">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut qui ullam atque amet saepe
+                    porro, unde molestiae! Id dignissimos illum ipsam dolorem reiciendis consectetur tenetur ullam,
+                    tempora nemo perspiciatis!
+                    Aspernatur qui deleniti et magnam sapiente culpa reiciendis, quas a possimus, fugit quos sunt
+                    obcaecati vel! Ipsam pariatur, ea consectetur ipsa explicabo eum doloribus deleniti necessitatibus
+                    fugit quae sint iure?
+                </div>
+
+            </section>
+            <section id="wrapper"
+                class="wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-24">
+            </section>
+            <section class="flex justify-center flex-col">
+                <h3 class="font-normal text-xl text-center mb-6">Be the first one to know when we launch our beta!</h3>
+                <div class="flex justify-center">
+                    <input type="email" name="email" id="email" placeholder="E-mail"
+                        class="w-520px p-2 pl-4 placeholder-black font-semibold text-lg">
+                    <button
+                        class="text-white font-bold bg-orange-400  px-3 py-3 ml-12 rounded  hover:font-semibold">
+                        Sign up
+                    </button>
+                </div>
+            </section>
+    </main>
+
+    <footer class="bg-white py-24">
+        <div class="container mx-auto">
+            sadads
+        </div>
+    </footer>
+</body>
+
+</html>
